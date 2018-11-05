@@ -10,34 +10,36 @@
                 <input type="hidden" id="del_url" value="../lib/house.php" />
                 <table class="table table-bordered text-center">
                     <tr>
-                        <td>封面图</td>
-                        <td>标题</td>
-                        <td>分类</td>
-                        <td>区域</td>
-                        <td>发布时间</td>
+                        <td>序号</td>
+                         <td>订单号</td>
+                        <td>商品名</td>
+                        <td>数量</td>
+                        <td>商品金额</td>
+                        <td>实付金额</td>
                         <td>操作</td>
                     </tr>
-                                        <tr>
+                    @foreach($list as $k=>$item)
+                                        <tr rows="{{ \App\Http\Models\Order_detail::getCountBySn($item->order_sn) }}">
                         <td>
-                                                       -
+                                                       {{ ($list->currentPage()-1)*$list->perPage() + $k + 1 }}
                                                     </td>
+                        <td><span class="form-span">{{ $item->order_sn }}</span></td>
+                        <td><span class="form-span"></span></td>
                         <td><span class="form-span">-</span></td>
                         <td><span class="form-span">-</span></td>
                         <td><span class="form-span">-</span></td>
-                        <td><span class="form-span">-</span></td>
+        
                         <td>
                             <a class="btn btn-info edit" href="house-edit.php?id=120">编辑</a>
                             <a class="btn btn-danger del" data-id="120">删除</a>
                         </td>
                     </tr>
+                    @endForeach
                                        
                                     </table>
                 <div class="text-center">
-                    <ul class="pagination"><li class="active"><span>1</span></li><li><a href="?page=2">2</a></li><li><a href="?page=3">3</a></li><li><a href="?page=4">4</a></li><li><a href="?page=5">5</a></li><li><a href="?page=6">6</a></li><li>
-                            <a href="?page=10" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li></ul>              </div>
+                   {!! $list->render() !!}           
+               </div>
             </div>
         </div>
     </div>
