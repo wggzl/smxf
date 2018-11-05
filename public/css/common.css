@@ -1,0 +1,359 @@
+/*---全局---*/
+.mb0{ margin-bottom: 0px; }
+.mb5{ margin-bottom: 5px; }
+.mb10{ margin-bottom: 10px; }
+.mb15{ margin-bottom: 15px; }
+.mb20{ margin-bottom: 20px; }
+.mb25{ margin-bottom: 25px; }
+.mb30{ margin-bottom: 30px; }
+.mb35{ margin-bottom: 35px; }
+.mb40{ margin-bottom: 40px; }
+.mb45{ margin-bottom: 45px; }
+.mb50{ margin-bottom: 50px; }
+.mb55{ margin-bottom: 55px; }
+.mb60{ margin-bottom: 60px; }
+.mt0{ margin-top: 0px; }
+.mt5{ margin-top: 5px; }
+.mt10{ margin-top: 10px; }
+.mt15{ margin-top: 15px; }
+.mt20{ margin-top: 20px; }
+.mt25{ margin-top: 25px; }
+.mt30{ margin-top: 30px; }
+.mt35{ margin-top: 35px; }
+.mt40{ margin-top: 40px; }
+.mt45{ margin-top: 45px; }
+.mt50{ margin-top: 50px; }
+.mt55{ margin-top: 55px; }
+.mt60{ margin-top: 60px; }
+
+
+.line-through{
+	text-decoration: line-through;
+}
+
+.table > tbody > tr > td{
+	vertical-align: middle;	
+}
+.form-a{
+	line-height: 34px;
+	text-decoration: underline;
+}
+.form-span{
+	line-height: 34px;
+}
+.form-p{
+	margin-bottom: 0;
+}
+.table > tbody > tr > td.multiple .form-p{
+	margin-bottom: 0px;
+	font-size: 0;
+}
+.table > tbody > tr > td.multiple .form-p span{
+	display: inline-block; 
+	width: 50%; 
+	font-size: 14px;
+}
+.table > tbody > tr > td.multiple .form-p a{
+	font-size: 14px;
+	text-decoration: underline;
+}
+.table tr img{
+	max-width: 320px;
+}
+.form-error{
+	line-height: 34px;
+	color: #a94442;
+	display: none;
+}
+.form-control[readonly]{
+	background-color: white;
+}
+.form-title{
+	font-size: 18px;
+	font-weight: 700;
+}
+select[multiple].form-multiple-select{
+	height: 150px;
+    width: 100%;
+    overflow-y: auto;
+}
+textarea.form-control {
+	height: 180px;
+    resize: none;
+}
+.optional-group {
+	display: none;
+}
+
+.bs-callout{
+	padding: 20px;
+    margin: 20px 0;
+    border: 1px solid white;
+    border-left-width: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.bs-callout-info{
+    border-left-color: #5bc0de;
+}
+.bs-callout-danger{
+    border-left-color: #f2dede;
+}
+.bs-callout-warning{
+	border-left-color: #fcf8e3;
+}
+.bs-callout-success{
+	border-left-color: #dff0d8;
+}
+.bs-callout-primary{
+	border-left-color: #337ab7;
+}
+.bg-search{
+	background-color: #f9f9f9;
+	padding: 15px;
+}
+.bg-table-title{
+	background-color: #337ab7;
+	padding: 15px;
+	margin-top: 60px;
+	color: #fff;
+}
+.btn-purple {
+	background: #9900FF;
+	color: #fff;
+}
+.btn-purple:hover{
+	background: #9900CC;
+	color: #fff;
+}
+.btn.disable{
+	background: #aaa;
+	border-color: #aaa;
+	cursor: not-allowed;
+}
+
+.tr-bg-finish{
+	background: #CCFFCC;
+}
+.tr-bg-student-delay{
+	background: #FFCC99;
+}
+.tr-bg-lecturer-delay{
+	background: #FF9999;
+}
+.tr-bg-pause{
+	background: #FFFFCC;
+}
+.tr-bg-resign{
+	background: #CCCCCC;
+}
+.tr-bg-used{
+	background: rgba(153,51,51,0.3);
+}
+.tr-bg-agree{
+	background: rgba(0,204,51,0.3);
+}
+.tr-bg-refuse{
+	background: rgba(153,51,51,0.3);
+}
+
+/* ajax-table */
+.ajax-table .confirm, .ajax-table .cancel, .ajax-table .table-input{
+	display: none;
+}
+.ajax-table .table-span{
+	line-height: 34px;
+}
+
+
+
+/*---新增文章页---*/
+.img-preview {
+	width: 100%;
+}
+#house-add-page .checkbox label {
+	margin-bottom: 10px;
+}
+
+
+/*---编辑文章页---*/
+#house-edit-page .checkbox label {
+	margin-bottom: 10px;
+}
+
+.form-signin {max-width: 330px; padding: 80px 0; margin: 0 auto;}
+h2 {margin: 30px 0}
+/*input {margin-bottom: 30px;}*/
+button {margin-top: 20px;}
+.error {color: #FF0033;}
+
+
+.tb > tbody > tr > td.tb-text {
+	width: 90%;
+}
+
+
+/* -------------------------------- */
+/*注：amazeui中，margin的像素换算是12px=1rem；font-size的像素换算是10px=1rem*/
+
+p{margin: 0;}
+
+.am-badge{
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+.am-badge.am-radius{
+    border-radius: 6px;
+}
+.am-radio{
+ 	margin-bottom: 0;
+ 	font-size: 16px;
+}
+
+.title-bar{
+	padding: 0.8rem 0 0.8rem 1rem;
+	background: #0e90d2;
+}
+.title-bar h2{
+	font-size: 1.125em;
+	margin: 0;
+	color: white;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+}
+
+/*---标签对齐为五个字加上引号（即六个字距离）---*/
+.font-align{
+	font-size: 0;
+	width: 100%;
+	min-width: 296px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.font-align .label{
+	display: inline-block;
+	width: 32%;
+	min-width: 96px;
+	text-align: center;
+}
+.font-align span{
+	font-size: 1.6rem;
+	vertical-align: top;
+}
+.font-align .content{
+	width: 66%;
+	min-width: 200px;
+    display: inline-block;
+}
+.font-align .font-three{
+	margin-left: 4rem;
+}
+.font-align .font-four{
+	margin-left: 1.3rem;
+	margin-right: 1.3rem;
+}
+.font-align .font-five-first{
+	margin-left: 0.4rem;
+	margin-right: 0.5rem;
+}
+.font-align .font-five-second{
+	margin-right: 0.4rem;
+}
+
+/*---list相关---*/
+/*.list-item-title {background: #fff;}*/
+.common-custom-list.am-list {margin-top: 1.6rem;}
+.common-custom-list.am-list>li {border-top: none; margin-bottom: 1.6rem;}
+
+/*---按钮相关---*/
+.btn-width-100{
+	width: 100px;
+}
+.btn-width-110{
+	width: 110px;
+}
+
+footer .message{
+	position: relative;
+}
+footer .message .dot{
+	position: absolute;
+	bottom: 35%;
+	left: 25%;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: red;
+	border-radius: 50%;
+}
+
+/* ----------- */
+.label  {
+	width: 120px;
+	float:left;
+}
+.goods-intro {
+	float: right;
+	width: 225px;
+	height: 120px;
+	padding:5px;
+}
+
+.goods-intro > p {
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
+}
+
+.goods-intro > p > span{
+	margin-right: 10px;
+}
+
+.list-item-title:after{
+	clear:both;
+	content:'';
+	display:block;
+	width:0;height:0;
+	visibility:hidden;
+}
+
+.select-size{
+	margin-top:-10px;
+}
+
+.select-size div select{
+	width: 80%;
+	border:1px solid #ccc;
+	height: 30px;
+}
+
+/*.buy-comment {background: red;}*/
+.buy-comment label {font-size:14px;font-weight: normal;}
+.buy-comment textarea {width:80%;border:1px solid #eee;}
+
+.last-intro > div{
+	float: left;
+}
+.last-intro > div.label {
+	width: 120px;
+	padding:4px;
+}
+
+.last-intro > div.shou {
+	width: 70%;
+}
+
+.last-intro > div.shou > input{
+	height: 30px;
+}
+
+.last-intro:after{
+	clear:both;
+	content:'';
+	display: block;
+	width:0;height:0;
+	visibility:hidden;
+}
+
+
+
